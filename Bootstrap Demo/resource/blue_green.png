@@ -1,0 +1,139 @@
+ane_pink.properties
+[14:07:42] [main/INFO]: [OptiFine] ConnectedTextures: optifine/ctm/default/glass_pink/glass_pink.properties
+[14:07:42] [main/INFO]: [OptiFine] ConnectedTextures: optifine/ctm/default/glass_purple/glass_pane_purple.properties
+[14:07:42] [main/INFO]: [OptiFine] ConnectedTextures: optifine/ctm/default/glass_purple/glass_purple.properties
+[14:07:42] [main/INFO]: [OptiFine] ConnectedTextures: optifine/ctm/default/glass_red/glass_pane_red.properties
+[14:07:42] [main/INFO]: [OptiFine] ConnectedTextures: optifine/ctm/default/glass_red/glass_red.properties
+[14:07:42] [main/INFO]: [OptiFine] ConnectedTextures: optifine/ctm/default/glass_white/glass_pane_white.properties
+[14:07:42] [main/INFO]: [OptiFine] ConnectedTextures: optifine/ctm/default/glass_white/glass_white.properties
+[14:07:42] [main/INFO]: [OptiFine] ConnectedTextures: optifine/ctm/default/glass_yellow/glass_pane_yellow.properties
+[14:07:42] [main/INFO]: [OptiFine] ConnectedTextures: optifine/ctm/default/glass_yellow/glass_yellow.properties
+[14:07:42] [main/INFO]: [OptiFine] Multipass connected textures: false
+[14:07:43] [main/INFO]: [OptiFine] Multipass connected textures: false
+[14:07:43] [main/INFO]: [OptiFine] Multipass connected textures: false
+[14:07:43] [main/INFO]: [OptiFine] BetterGrass: Parsing default configuration optifine/bettergrass.properties
+[14:07:48] [main/INFO]: Created: 2048x1024 textures-atlas
+[14:07:48] [main/INFO]: [OptiFine] Animated sprites: 27
+[14:07:49] [main/INFO]: Narrator library for x64 successfully loaded
+[14:07:49] [main/INFO]: [OptiFine] *** Reloading custom textures ***
+[14:07:49] [main/INFO]: [OptiFine] Natural Textures: Parsing default configuration "optifine/natural.properties"
+[14:07:49] [main/INFO]: [OptiFine] Natural Textures: Valid only for textures from default resource pack
+[14:07:49] [main/INFO]: [OptiFine] CustomSky properties: optifine/sky/world0/sky1.properties
+[14:07:50] [main/INFO]: [OptiFine] CustomSky properties: optifine/sky/world0/sky2.properties
+[14:07:50] [main/INFO]: [OptiFine] CustomSky properties: optifine/sky/world0/sky3.properties
+[14:07:50] [main/INFO]: [OptiFine] CustomSky properties: optifine/sky/world0/sky4.properties
+[14:07:50] [main/INFO]: [OptiFine] CustomSky properties: optifine/sky/world0/sky5.properties
+[14:07:50] [main/INFO]: [OptiFine] CustomSky properties: optifine/sky/world0/sky6.properties
+[14:07:50] [main/INFO]: [OptiFine] CustomSky properties: optifine/sky/world0/sky7.properties
+[14:07:50] [main/INFO]: [OptiFine] CustomSky properties: optifine/sky/world0/sky8.properties
+[14:08:00] [main/INFO]: Connecting to 216.172.105.168, 25565
+[14:08:04] [main/INFO]: Loaded 484 advancements
+[14:22:43] [main/WARN]: Received passengers for unknown entity
+[14:22:43] [main/WARN]: Received passengers for unknown entity
+[14:22:43] [main/WARN]: Received passengers for unknown entity
+[14:22:43] [main/WARN]: Received passengers for unknown entity
+[14:22:43] [main/WARN]: Received passengers for unknown entity
+[14:22:43] [main/WARN]: Received passengers for unknown entity
+[14:22:43] [main/WARN]: Received passengers for unknown entity
+[14:22:43] [main/WARN]: Received passengers for unknown entity
+[14:35:26] [main/WARN]: Unable to play empty soundEvent: minecraft:entity.cod.ambient
+[14:35:40] [main/WARN]: Received passengers for unknown entity
+[14:36:02] [main/INFO]: [CHAT] [Debug]: Reloaded resource packs
+[14:36:02] [main/INFO]: Reloading ResourceManager: Default, Faithful 32x, Clear Glass.zip, Skies
+[14:36:02] [main/INFO]: [OptiFine] *** Reloading textures ***
+[14:36:02] [main/INFO]: [OptiFine] Resource packs: Faithful 32x, Clear Glass.zip, Skies
+[14:36:02] [main/INFO]: SoundSystem shutting down...
+[14:36:03] [main/INFO]: SoundSystem Author: Paul Lamb, www.paulscode.com
+[14:36:03] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[14:36:03] [main/INFO]: [OptiFine] Loading textures/font/ascii_sga.properties
+[14:36:03] [main/INFO]: [OptiFine] Loading textures/font/ascii.properties
+[14:36:03] [Thread-8/INFO]: Initializing No Sound
+[14:36:03] [Thread-8/INFO]: (Silent Mode)
+[14:36:03] [Thread-8/INFO]: OpenAL initialized.
+[14:36:03] [Sound Library Loader/INFO]: Preloading sound minecraft:sounds/ambient/underwater/underwater_ambience.ogg
+[14:36:03] [Sound Library Loader/INFO]: Sound engine started
+[14:36:04] [main/INFO]: [OptiFine] Multitexture: true
+[14:36:04] [main/INFO]: [OptiFine] Multipass connected textures: false
+[14:36:04] [main/INFO]: [OptiFine] ConnectedTextures: optifine/ctm/default/glass_black/glass_black.properties
+[14:36:04] [main/INFO]: [OptiFine] ConnectedTextures: optifine/ctm/default/glass_black/glass_pane_black.properties
+[14:36:04] [main/INFO]: [OptiFine] ConnectedTextures: optifine/ctm/default/glass_blue/glass_blue.properties
+[14:36:04] [main/INFO]: [OptiFine] ConnectedTextures: optifine/ctm/default/glass_blue/glass_pane_blue.properties
+[14:36:04] [main/INFO]: [OptiFine] ConnectedTextures: optifine/ctm/default/glass_brown/glass_brown.properties
+[14:36:04] [main/INFO]: [OptiFine] ConnectedTextures: optifine/ctm/default/glass_brown/glass_pane_brown.properties
+[14:36:04] [main/INFO]: [OptiFine] ConnectedTextures: optifine/ctm/default/glass_cyan/glass_cyan.properties
+[14:36:04] [main/INFO]: [OptiFine] ConnectedTextures: optifine/ctm/default/glass_cyan/glass_pane_cyan.properties
+[14:36:04] [main/INFO]: [OptiFine] ConnectedTextures: optifine/ctm/default/glass_gray/glass_gray.properties
+[14:36:04] [main/INFO]: [OptiFine] ConnectedTextures: optifine/ctm/default/glass_gray/glass_pane_gray.properties
+[14:36:04] [main/INFO]: [OptiFine] ConnectedTextures: optifine/ctm/default/glass_green/glass_green.properties
+[14:36:04] [main/INFO]: [OptiFine] ConnectedTextures: optifine/ctm/default/glass_green/glass_pane_green.properties
+[14:36:04] [main/INFO]: [OptiFine] ConnectedTextures: optifine/ctm/default/glass_light_blue/glass_light_blue.properties
+[14:36:04] [main/INFO]: [OptiFine] ConnectedTextures: optifine/ctm/default/glass_light_blue/glass_pane_light_blue.properties
+[14:36:04] [main/INFO]: [OptiFine] ConnectedTextures: optifine/ctm/default/glass_light_gray/glass_light_gray.properties
+[14:36:04] [main/INFO]: [OptiFine] ConnectedTextures: optifine/ctm/default/glass_light_gray/glass_pane_light_gray.properties
+[14:36:04] [main/INFO]: [OptiFine] ConnectedTextures: optifine/ctm/default/glass_lime/glass_lime.properties
+[14:36:04] [main/INFO]: [OptiFine] ConnectedTextures: optifine/ctm/default/glass_lime/glass_pane_lime.properties
+[14:36:04] [main/INFO]: [OptiFine] ConnectedTextures: optifine/ctm/default/glass_magenta/glass_magenta.properties
+[14:36:04] [main/INFO]: [OptiFine] ConnectedTextures: optifine/ctm/default/glass_magenta/glass_pane_magenta.properties
+[14:36:04] [main/INFO]: [OptiFine] ConnectedTextures: optifine/ctm/default/glass_orange/glass_orange.properties
+[14:36:04] [main/INFO]: [OptiFine] ConnectedTextures: optifine/ctm/default/glass_orange/glass_pane_orange.properties
+[14:36:04] [main/INFO]: [OptiFine] ConnectedTextures: optifine/ctm/default/glass_pink/glass_pane_pink.properties
+[14:36:04] [main/INFO]: [OptiFine] ConnectedTextures: optifine/ctm/default/glass_pink/glass_pink.properties
+[14:36:04] [main/INFO]: [OptiFine] ConnectedTextures: optifine/ctm/default/glass_purple/glass_pane_purple.properties
+[14:36:04] [main/INFO]: [OptiFine] ConnectedTextures: optifine/ctm/default/glass_purple/glass_purple.properties
+[14:36:04] [main/INFO]: [OptiFine] ConnectedTextures: optifine/ctm/default/glass_red/glass_pane_red.properties
+[14:36:04] [main/INFO]: [OptiFine] ConnectedTextures: optifine/ctm/default/glass_red/glass_red.properties
+[14:36:04] [main/INFO]: [OptiFine] ConnectedTextures: optifine/ctm/default/glass_white/glass_pane_white.properties
+[14:36:04] [main/INFO]: [OptiFine] ConnectedTextures: optifine/ctm/default/glass_white/glass_white.properties
+[14:36:04] [main/INFO]: [OptiFine] ConnectedTextures: optifine/ctm/default/glass_yellow/glass_pane_yellow.properties
+[14:36:04] [main/INFO]: [OptiFine] ConnectedTextures: optifine/ctm/default/glass_yellow/glass_yellow.properties
+[14:36:04] [main/INFO]: [OptiFine] Multipass connected textures: false
+[14:36:04] [main/INFO]: [OptiFine] Multipass connected textures: false
+[14:36:04] [main/INFO]: [OptiFine] Multipass connected textures: false
+[14:36:04] [main/INFO]: [OptiFine] BetterGrass: Parsing default configuration optifine/bettergrass.properties
+[14:36:05] [main/INFO]: Created: 2048x1024 textures-atlas
+[14:36:05] [main/INFO]: [OptiFine] Animated sprites: 27
+[14:36:05] [main/INFO]: [OptiFine] *** Reloading custom textures ***
+[14:36:05] [main/INFO]: [OptiFine] Natural Textures: Parsing default configuration "optifine/natural.properties"
+[14:36:05] [main/INFO]: [OptiFine] Natural Textures: Valid only for textures from default resource pack
+[14:36:05] [main/INFO]: [OptiFine] CustomSky properties: optifine/sky/world0/sky1.properties
+[14:36:05] [main/INFO]: [OptiFine] CustomSky properties: optifine/sky/world0/sky2.properties
+[14:36:05] [main/INFO]: [OptiFine] CustomSky properties: optifine/sky/world0/sky3.properties
+[14:36:05] [main/INFO]: [OptiFine] CustomSky properties: optifine/sky/world0/sky4.properties
+[14:36:06] [main/INFO]: [OptiFine] CustomSky properties: optifine/sky/world0/sky5.properties
+[14:36:06] [main/INFO]: [OptiFine] CustomSky properties: optifine/sky/world0/sky6.properties
+[14:36:06] [main/INFO]: [OptiFine] CustomSky properties: optifine/sky/world0/sky7.properties
+[14:36:06] [main/INFO]: [OptiFine] CustomSky properties: optifine/sky/world0/sky8.properties
+[14:37:09] [main/WARN]: Unable to play empty soundEvent: minecraft:entity.cod.ambient
+[17:17:17] [pool-5-thread-1/INFO]: Could not authorize you against Realms server: Invalid session id
+[17:17:17] [pool-5-thread-3/INFO]: Could not authorize you against Realms server: Invalid session id
+[17:17:17] [pool-5-thread-2/INFO]: Could not authorize you against Realms server: Invalid session id
+[17:17:17] [pool-5-thread-3/ERROR]: Couldn't get pending invite count
+com.mojang.realmsclient.exception.RealmsServiceException: Invalid session id
+	at com.mojang.realmsclient.client.RealmsClient.execute(RealmsClient.java:438) ~[RealmsClient.class:1.13.9]
+	at com.mojang.realmsclient.client.RealmsClient.pendingInvitesCount(RealmsClient.java:323) ~[RealmsClient.class:1.13.9]
+	at com.mojang.realmsclient.gui.RealmsDataFetcher$PendingInviteUpdateTask.updatePendingInvites(RealmsDataFetcher.java:263) [RealmsDataFetcher$PendingInviteUpdateTask.class:1.13.9]
+	at com.mojang.realmsclient.gui.RealmsDataFetcher$PendingInviteUpdateTask.run(RealmsDataFetcher.java:254) [RealmsDataFetcher$PendingInviteUpdateTask.class:1.13.9]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [?:1.8.0_51]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308) [?:1.8.0_51]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180) [?:1.8.0_51]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294) [?:1.8.0_51]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [?:1.8.0_51]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [?:1.8.0_51]
+	at java.lang.Thread.run(Thread.java:745) [?:1.8.0_51]
+[17:17:17] [pool-5-thread-1/ERROR]: Couldn't get trial availability
+com.mojang.realmsclient.exception.RealmsServiceException: Invalid session id
+	at com.mojang.realmsclient.client.RealmsClient.execute(RealmsClient.java:438) ~[RealmsClient.class:1.13.9]
+	at com.mojang.realmsclient.client.RealmsClient.trialAvailable(RealmsClient.java:383) ~[RealmsClient.class:1.13.9]
+	at com.mojang.realmsclient.gui.RealmsDataFetcher$TrialAvailabilityTask.getTrialAvailable(RealmsDataFetcher.java:285) [RealmsDataFetcher$TrialAvailabilityTask.class:1.13.9]
+	at com.mojang.realmsclient.gui.RealmsDataFetcher$TrialAvailabilityTask.run(RealmsDataFetcher.java:276) [RealmsDataFetcher$TrialAvailabilityTask.class:1.13.9]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [?:1.8.0_51]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308) [?:1.8.0_51]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180) [?:1.8.0_51]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294) [?:1.8.0_51]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [?:1.8.0_51]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [?:1.8.0_51]
+	at java.lang.Thread.run(Thread.java:745) [?:1.8.0_51]
+[17:17:17] [main/INFO]: Stopping!
+[17:17:17] [main/INFO]: SoundSystem shutting down...
+[17:17:17] [main/INFO]: SoundSystem Author: Paul Lamb, www.paulscode.com
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
