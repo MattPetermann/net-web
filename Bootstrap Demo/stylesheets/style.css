@@ -8,6 +8,10 @@
     width: 80%;
 }
 
+.dropdown-item {
+    color: #aaa;
+}
+
 .jumbotron {
     box-shadow: 5px 5px 5px gray;
     text-align: center;
