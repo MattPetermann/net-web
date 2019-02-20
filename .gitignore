@@ -1,5 +1,10 @@
 #Project folders
 Bootstrap Demo/.idea
+MVC Demo/.vs
 
 #Project files
 Bootstrap Demo/Bootstrap Demo.iml
+MVC Demo/MVC Demo.sln
+
+#Library files
+MVC Demo/packages
