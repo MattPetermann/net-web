@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.Mvc;
+﻿using System.Web.Mvc;
 using System.Web.Routing;
 
 namespace Colors
@@ -14,9 +10,12 @@ namespace Colors
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
             routes.MapRoute(
-                name: "Index",
-                url: "{controller}/{action}/{color1}/{color2}",
-                defaults: new { controller = "Home", action = "Index", color1 = UrlParameter.Optional, color2 = UrlParameter.Optional }
+                name: "AddColors",
+                url: "{controller}/{action}/{color1}/{color2}/{result}",
+                defaults: new { controller = "Home", action = "Index",
+                    color1 = UrlParameter.Optional,
+                    color2 = UrlParameter.Optional, 
+                    result = UrlParameter.Optional }
             );
 
             routes.MapRoute(

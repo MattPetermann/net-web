@@ -8,23 +8,22 @@
 </div>
 
 <div class="row">
-    <form method="post" action="~/Home/Index/CombineColors">
+    <form method="post" action="~/Home/Index">
         <div class="input-group">
-            <span class="input-group-addon"><i class="glyphicon glyphicon-tint"></i></span>
-            <select id="color1" type="text" class="form-control" name="color1" required>
-                <option>@ViewBag.Colors[0].Name.ToUpper()</option>
-                <option>@ViewBag.Colors[1].Name.ToUpper()</option>
-                <option>@ViewBag.Colors[2].Name.ToUpper()</option>
-            </select>
-
-            <span class="input-group-addon"><i class="glyphicon glyphicon-tint"></i></span>
-            <select id="color2" type="text" class="form-control" name="color2">
-                <option>@ViewBag.Colors[0].Name.ToUpper()</option>
-                <option>@ViewBag.Colors[1].Name.ToUpper()</option>
-                <option>@ViewBag.Colors[2].Name.ToUpper()</option>
-            </select>
+            @for (int x = 1; x < 3; x++)
+            {
+                <span class="input-group-addon"><i class="glyphicon glyphicon-tint"></i></span>
+                <select id=@("color" + x) type="text" class="form-control" name=@("color" + x)>
+                    @foreach (var color in ViewBag.Colors)
+                    {
+                        <option style="background-color: @color.Hex">@color.Name.ToUpper()</option>
+                    }
+                </select>
+            }
         </div>
         <button type="submit" class="btn btn-success" id="submit">Combine</button>
     </form>
-    <h2 id="result">@ViewBag.Color1.ToUpper() AND @ViewBag.Color2.ToUpper() MAKE ORANGE</h2>
+    <h2 id="result" style="display: @(ViewBag.Result == "" ? "none;" : "block;") color: @ViewBag.Result">
+        @ViewBag.Color1.ToUpper() AND @ViewBag.Color2.ToUpper() MAKE @ViewBag.Result.ToUpper()
+    </h2>
 </div>
