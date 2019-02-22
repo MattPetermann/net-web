@@ -1,0 +1,29 @@
+﻿@{
+    ViewBag.Title = "Colors";
+}
+
+<div class="jumbotron">
+    <h1>Color Adder</h1>
+    <p class="lead">Select two colors. </p>
+</div>
+
+<div class="row">
+        <form id="colorForm">
+            <div class="input-group">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-tint"></i></span>
+                <select id="color1" type="text" class="form-control" name="color1">
+                    <option>One</option>
+                    <option>Two</option>
+                    <option>Three</option>
+                </select>
+
+                <span class="input-group-addon"><i class="glyphicon glyphicon-tint"></i></span>
+                <select id="color2" type="text" class="form-control" name="color2">
+                    <option>One</option>
+                    <option>Two</option>
+                    <option>Three</option>
+                </select>
+            </div>
+        </form>
+        <h2 id="result">RED AND YELLOW MAKE ORANGE</h2>
+</div>
