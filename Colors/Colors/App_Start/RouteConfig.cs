@@ -14,6 +14,12 @@ namespace Colors
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
             routes.MapRoute(
+                name: "Index",
+                url: "{controller}/{action}/{color1}/{color2}",
+                defaults: new { controller = "Home", action = "Index", color1 = UrlParameter.Optional, color2 = UrlParameter.Optional }
+            );
+
+            routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
                 defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
