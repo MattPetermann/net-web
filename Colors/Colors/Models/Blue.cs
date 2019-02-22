@@ -1,5 +1,8 @@
 ﻿namespace Colors.Models
 {
+    /// <summary>
+    /// Blue Color
+    /// </summary>
     public class Blue : PrimaryColor
     {
         public Blue()
@@ -8,6 +11,11 @@
             Hex = "#3498db";
         }
 
+        /// <summary>
+        /// Add another Color to this one.
+        /// </summary>
+        /// <param name="addition">Color to add to this one</param>
+        /// <returns>New Color that is a combination of this color and the provided one</returns>
         public override IColor Add(IColor addition)
         {
             switch (addition.Name)

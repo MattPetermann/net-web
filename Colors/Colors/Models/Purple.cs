@@ -1,5 +1,8 @@
 ﻿namespace Colors.Models
 {
+    /// <summary>
+    /// Purple Color
+    /// </summary>
     public class Purple : SecondaryColor
     {
         public Purple()
