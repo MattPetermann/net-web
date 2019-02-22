@@ -21,6 +21,11 @@
     width: 60%;
 }
 
+#submit {
+    display: block;
+    margin: 5px auto auto auto;
+}
+
 h2 {
     text-align: center;
 }

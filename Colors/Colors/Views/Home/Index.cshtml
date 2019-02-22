@@ -8,22 +8,23 @@
 </div>
 
 <div class="row">
-        <form id="colorForm">
-            <div class="input-group">
-                <span class="input-group-addon"><i class="glyphicon glyphicon-tint"></i></span>
-                <select id="color1" type="text" class="form-control" name="color1">
-                    <option>One</option>
-                    <option>Two</option>
-                    <option>Three</option>
-                </select>
+    <form method="post" action="~/Home/Index/CombineColors">
+        <div class="input-group">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-tint"></i></span>
+            <select id="color1" type="text" class="form-control" name="color1" required>
+                <option>@ViewBag.Colors[0].Name.ToUpper()</option>
+                <option>@ViewBag.Colors[1].Name.ToUpper()</option>
+                <option>@ViewBag.Colors[2].Name.ToUpper()</option>
+            </select>
 
-                <span class="input-group-addon"><i class="glyphicon glyphicon-tint"></i></span>
-                <select id="color2" type="text" class="form-control" name="color2">
-                    <option>One</option>
-                    <option>Two</option>
-                    <option>Three</option>
-                </select>
-            </div>
-        </form>
-        <h2 id="result">@ViewBag.Color1.ToUpper() AND @ViewBag.Color2.ToUpper() MAKE ORANGE</h2>
+            <span class="input-group-addon"><i class="glyphicon glyphicon-tint"></i></span>
+            <select id="color2" type="text" class="form-control" name="color2">
+                <option>@ViewBag.Colors[0].Name.ToUpper()</option>
+                <option>@ViewBag.Colors[1].Name.ToUpper()</option>
+                <option>@ViewBag.Colors[2].Name.ToUpper()</option>
+            </select>
+        </div>
+        <button type="submit" class="btn btn-success" id="submit">Combine</button>
+    </form>
+    <h2 id="result">@ViewBag.Color1.ToUpper() AND @ViewBag.Color2.ToUpper() MAKE ORANGE</h2>
 </div>
