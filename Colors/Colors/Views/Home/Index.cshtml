@@ -1,4 +1,5 @@
-﻿@{
+﻿@using Colors.Models; 
+@{
     ViewBag.Title = "Colors";
 }
 
@@ -10,20 +11,20 @@
 <div class="row">
     <form method="post" action="~/Home/Index">
         <div class="input-group">
-            @for (int x = 1; x < 3; x++)
+            @for (int x=1; x<3; x++)
             {
                 <span class="input-group-addon"><i class="glyphicon glyphicon-tint"></i></span>
                 <select id=@("color" + x) type="text" class="form-control" name=@("color" + x)>
-                    @foreach (var color in ViewBag.Colors)
+                    @foreach (string key in ViewBag.ColorOptions.Keys)
                     {
-                        <option style="background-color: @color.Hex">@color.Name.ToUpper()</option>
+                        <option style="background-color: @ViewBag.ColorOptions[key].Hex">@ViewBag.ColorOptions[key].Name</option>
                     }
                 </select>
             }
         </div>
         <button type="submit" class="btn btn-success" id="submit">Combine</button>
     </form>
-    <h2 id="result" style="display: @(ViewBag.Result == "" ? "none;" : "block;") color: @ViewBag.Result">
-        @ViewBag.Color1.ToUpper() AND @ViewBag.Color2.ToUpper() MAKE @ViewBag.Result.ToUpper()
+    <h2 id="result" style="color: @ViewBag.Result.Hex">
+        @ViewBag.Color1 AND @ViewBag.Color2 MAKE @ViewBag.Result.Name
     </h2>
 </div>

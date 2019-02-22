@@ -151,7 +151,15 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Helpers\Color.cs" />
+    <Compile Include="Models\Blue.cs" />
+    <Compile Include="Models\Color.cs" />
+    <Compile Include="Models\Green.cs" />
+    <Compile Include="Models\Orange.cs" />
+    <Compile Include="Models\PrimaryColor.cs" />
+    <Compile Include="Models\Purple.cs" />
+    <Compile Include="Models\Red.cs" />
+    <Compile Include="Models\SecondaryColor.cs" />
+    <Compile Include="Models\Yellow.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -194,7 +202,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
