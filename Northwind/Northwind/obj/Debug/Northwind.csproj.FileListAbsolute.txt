@@ -89,3 +89,4 @@ C:\Users\mattp\Desktop\net-web\Northwind\Northwind\obj\Debug\Northwind.csproj.Co
 C:\Users\mattp\Desktop\net-web\Northwind\Northwind\obj\Debug\Northwind.csproj.CopyComplete
 C:\Users\mattp\Desktop\net-web\Northwind\Northwind\obj\Debug\Northwind.dll
 C:\Users\mattp\Desktop\net-web\Northwind\Northwind\obj\Debug\Northwind.pdb
+C:\Users\mattp\Desktop\net-web\Northwind\Northwind\bin\WebActivatorEx.dll
