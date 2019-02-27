@@ -2,9 +2,9 @@
 {
     public class Product
     {
-        int Id { get; set; }
-        double Price { get; set; }
-        string Name { get; set; }
+        public int Id { get; set; }
+        public double Price { get; set; }
+        public string Name { get; set; }
 
         public Product(int id, double price, string name)
         {
