@@ -11,7 +11,7 @@ namespace Northwind
 
             routes.MapRoute(
                 name: "Default",
-                url: "{action}",
+                url: "{Controller}/{action}",
                 defaults: new { controller = "Home", action = "Index" }
             );
         }

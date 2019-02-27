@@ -1,4 +1,6 @@
-﻿using System.Web.Mvc;
+﻿using Northwind.Models;
+using System.Collections.Generic;
+using System.Web.Mvc;
 
 namespace Northwind.Controllers
 {
@@ -11,7 +13,12 @@ namespace Northwind.Controllers
 
         public ActionResult Products()
         {
-            ViewBag.Message = "Your product page.";
+            ViewBag.Products = new List<Product>
+            {
+                new Product(1000, 249.99, "Bike"),
+                new Product(1001, 24.99, "Helmet"),
+                new Product(1002, 11.99, "Knee Pads"),
+            };
 
             return View();
         }

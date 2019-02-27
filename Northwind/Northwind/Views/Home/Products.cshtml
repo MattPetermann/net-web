@@ -1,7 +1,14 @@
 ﻿@{
-    ViewBag.Title = "Products";
+        ViewBag.Title = "Products";
 }
-<h2>@ViewBag.Title</h2>
-<h3>
-    @ViewBag.Message
-</h3>
+
+<h2 class="display-1">@ViewBag.Title</h2>
+
+<div class="card-deck">
+    @foreach(var product in ViewBag.Products)
+    {
+        <div class="card bg-primary">
+
+        </div>
+    }
+</div>
