@@ -1,0 +1,74 @@
+﻿@{ 
+    ViewBag.Header = "Balloon Order Form";
+    ViewBag.SubHeader = "Order balloons below.";
+}
+
+<form action="@Url.Action("ViewCart", "Home")" method="post">
+    <div class="input-group form-check mb-3">
+        <div class="input-group-prepend">
+            <div class="input-group-text">
+                <input type="checkbox" name="redCheck"/>
+            </div>
+        </div> 
+        <input type="number" class="form-control" value="0" min="0" name="redCount">
+        <div class="input-group-append">
+            <div class="input-group-text">Red</div>
+        </div>
+    </div>
+    <div class="input-group form-check mb-3">
+        <div class="input-group-prepend">
+            <div class="input-group-text">
+                <input type="checkbox" name="blueCheck"/>
+            </div>
+        </div>
+        <input type="number" class="form-control" value="0" min="0" name="blueCount">
+        <div class="input-group-append">
+            <div class="input-group-text">Blue</div>
+        </div>
+    </div>
+    <div class="input-group form-check mb-3">
+        <div class="input-group-prepend">
+            <div class="input-group-text">
+                <input type="checkbox" name="yellowCheck"/>
+            </div>
+        </div>
+        <input type="number" class="form-control" value="0" min="0" name="yellowCount">
+        <div class="input-group-append">
+            <div class="input-group-text">Yellow</div>
+        </div>
+    </div>
+    <div class="input-group form-check mb-3">
+        <div class="input-group-prepend">
+            <div class="input-group-text">
+                <input type="checkbox" name="purpleCheck"/>
+            </div>
+        </div>
+        <input type="number" class="form-control" value="0" min="0" name="purpleCount">
+        <div class="input-group-append">
+            <div class="input-group-text">Purple</div>
+        </div>
+    </div>
+    <div class="input-group form-check mb-3">
+        <div class="input-group-prepend">
+            <div class="input-group-text">
+                <input type="checkbox" name="greenCheck"/>
+            </div>
+        </div>
+        <input type="number" class="form-control" value="0" min="0" name="greenCount">
+        <div class="input-group-append">
+            <div class="input-group-text">Green</div>
+        </div>
+    </div>
+    <div class="input-group form-check mb-3">
+        <div class="input-group-prepend">
+            <div class="input-group-text">
+                <input type="checkbox" name="orangeCheck"/>
+            </div>
+        </div>
+        <input type="number" class="form-control" value="0" min="0" name="orangeCount">
+        <div class="input-group-append">
+            <div class="input-group-text">Orange</div>
+        </div>
+    </div>
+    <button type="submit" class="btn btn-primary"><i class="fa fa-shopping-cart"></i> Add to Cart</button>
+</form>
