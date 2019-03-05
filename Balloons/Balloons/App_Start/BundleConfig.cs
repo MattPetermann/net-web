@@ -24,6 +24,7 @@ namespace Balloons
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
+                      "~/Content/Animate.css",
                       "~/Content/site.css"));
         }
     }

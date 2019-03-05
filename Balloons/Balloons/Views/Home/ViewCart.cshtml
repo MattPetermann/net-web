@@ -67,4 +67,29 @@
         }
     </tbody>
 </table>
-<a href="#" class="btn btn-success"><i class="fa fa-money"></i> Continue to Payment</a>
+<div class="pay"><a href="#" class="btn btn-success mb-3"><i class="fa fa-money"></i> Continue to Payment</a></div>
+
+@if (ViewBag.FormResults.ContainsKey("redCheck") && ViewBag.FormResults["redCheck"] == "on" && ViewBag.FormResults["redCount"] != "0")
+{
+    <img src="~/Content/balloons/red.png" />
+}
+@if (ViewBag.FormResults.ContainsKey("blueCheck") && ViewBag.FormResults["blueCheck"] == "on" && ViewBag.FormResults["blueCount"] != "0")
+{
+    <img src="~/Content/balloons/blue.png" />
+}
+@if (ViewBag.FormResults.ContainsKey("yellowCheck") && ViewBag.FormResults["yellowCheck"] == "on" && ViewBag.FormResults["yellowCount"] != "0")
+{
+    <img src="~/Content/balloons/yellow.png" />
+}
+@if (ViewBag.FormResults.ContainsKey("purpleCheck") && ViewBag.FormResults["purpleCheck"] == "on" && ViewBag.FormResults["purpleCount"] != "0")
+{
+    <img src="~/Content/balloons/purple.png" />
+}
+@if (ViewBag.FormResults.ContainsKey("greenCheck") && ViewBag.FormResults["greenCheck"] == "on" && ViewBag.FormResults["greenCount"] != "0")
+{
+    <img src="~/Content/balloons/green.png" />
+}
+@if (ViewBag.FormResults.ContainsKey("orangeCheck") && ViewBag.FormResults["orangeCheck"] == "on" && ViewBag.FormResults["orangeCount"] != "0")
+{
+    <img src="~/Content/balloons/orange.png" />
+}

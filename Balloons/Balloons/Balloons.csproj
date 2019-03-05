@@ -158,6 +158,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\Animate.css" />
+    <Content Include="Content\balloons\balloon_blue-green.png" />
+    <Content Include="Content\balloons\balloon_orange.png" />
+    <Content Include="Content\balloons\balloon_red.png" />
     <Content Include="Content\bootstrap-grid.css" />
     <Content Include="Content\bootstrap-grid.min.css" />
     <Content Include="Content\bootstrap-reboot.css" />
