@@ -5,8 +5,11 @@ namespace Balloons.Controllers
 {
     public class HomeController : Controller
     {
+        private readonly string[] _Colors = { "red", "blue", "yellow", "purple", "green", "orange" };
+
         public ActionResult Index()
         {
+            ViewBag.Colors = _Colors;
             return View();
         }
         
@@ -22,6 +25,7 @@ namespace Balloons.Controllers
             }
 
             ViewBag.FormResults = keyValuePairs;
+            ViewBag.Colors = _Colors;
 
             return View();
         }

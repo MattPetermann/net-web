@@ -12,84 +12,30 @@
         </tr>
     </thead>
     <tbody>
-        @if (ViewBag.FormResults.ContainsKey("redCheck") && ViewBag.FormResults["redCheck"] == "on" && ViewBag.FormResults["redCount"] != "0")
+        @foreach (string color in ViewBag.Colors)
         {
-            <tr>
-                <td>Red Ballons</td>
-                <td>@(String.Format("{0:#,###}", Convert.ToInt32(ViewBag.FormResults["redCount"])))</td>
-                <td>$@(String.Format("{0:#,##0.00}", Convert.ToInt32(ViewBag.FormResults["redCount"]) * .99))</td>
-            </tr>
+            if (ViewBag.FormResults.ContainsKey(color + "Check") && ViewBag.FormResults[color + "Check"] == "on" && ViewBag.FormResults[color + "Count"] != "0")
+            {
+                <tr>
+                    <td>@(color.Substring(0, 1).ToUpper() + color.Substring(1)) Balloons</td>
+                    <td>@(String.Format("{0:#,###}", Convert.ToInt32(ViewBag.FormResults[color + "Count"])))</td>
+                    <td>$@(String.Format("{0:#,##0.00}", Convert.ToInt32(ViewBag.FormResults[color + "Count"]) * .99))</td>
+                </tr>
+            }
         }
-
-        @if (ViewBag.FormResults.ContainsKey("blueCheck") && ViewBag.FormResults["blueCheck"] == "on" && ViewBag.FormResults["blueCount"] != "0")
-        {
-            <tr>
-                <td>Blue Ballons</td>
-                <td>@(String.Format("{0:#,###}", Convert.ToInt32(ViewBag.FormResults["blueCount"])))</td>
-                <td>$@(String.Format("{0:#,##0.00}", Convert.ToInt32(ViewBag.FormResults["blueCount"]) * .99))</td>
-            </tr>
-        }
-
-        @if (ViewBag.FormResults.ContainsKey("yellowCheck") && ViewBag.FormResults["yellowCheck"] == "on" && ViewBag.FormResults["yellowCount"] != "0")
-        {
-            <tr>
-                <td>Yellow Ballons</td>
-                <td>@(String.Format("{0:#,###}", Convert.ToInt32(ViewBag.FormResults["yellowCount"])))</td>
-                <td>$@(String.Format("{0:#,##0.00}", Convert.ToInt32(ViewBag.FormResults["yellowCount"]) * .99))</td>
-            </tr>
-        }
-
-        @if (ViewBag.FormResults.ContainsKey("purpleCheck") && ViewBag.FormResults["purpleCheck"] == "on" && ViewBag.FormResults["purpleCount"] != "0")
-        {
-            <tr>
-                <td>Purple Ballons</td>
-                <td>@(String.Format("{0:#,###}", Convert.ToInt32(ViewBag.FormResults["purpleCount"])))</td>
-                <td>$@(String.Format("{0:#,##0.00}", Convert.ToInt32(ViewBag.FormResults["purpleCount"]) * .99))</td>
-            </tr>
-        }
-
-        @if (ViewBag.FormResults.ContainsKey("greenCheck") && ViewBag.FormResults["greenCheck"] == "on" && ViewBag.FormResults["greenCount"] != "0")
-        {
-            <tr>
-                <td>Green Ballons</td>
-                <td>@(String.Format("{0:#,###}", Convert.ToInt32(ViewBag.FormResults["greenCount"])))</td>
-                <td>$@(String.Format("{0:#,##0.00}", Convert.ToInt32(ViewBag.FormResults["greenCount"]) * .99))</td>
-            </tr>
-        }
-
-        @if (ViewBag.FormResults.ContainsKey("orangeCheck") && ViewBag.FormResults["orangeCheck"] == "on" && ViewBag.FormResults["orangeCount"] != "0")
-        {
-            <tr>
-                <td>Orange Ballons</td>
-                <td>@(String.Format("{0:#,###}", Convert.ToInt32(ViewBag.FormResults["orangeCount"])))</td>
-                <td>$@(String.Format("{0:#,##0.00}", Convert.ToInt32(ViewBag.FormResults["orangeCount"]) * .99))</td>
-            </tr>
-        }
+        <tr>
+            <th>Total:</th>
+            <th><span id="count"></span> items</th>
+            <th>$<span id="total"></span></th>
+        </tr>
     </tbody>
 </table>
 <div class="pay"><a href="#" class="btn btn-success mb-3"><i class="fa fa-money"></i> Continue to Payment</a></div>
 
-@if (ViewBag.FormResults.ContainsKey("redCheck") && ViewBag.FormResults["redCheck"] == "on" && ViewBag.FormResults["redCount"] != "0")
+@foreach (string color in ViewBag.Colors)
 {
-    <img src="~/Content/balloons/red.png" class="animated slideInUp" />
-}
-@if (ViewBag.FormResults.ContainsKey("blueCheck") && ViewBag.FormResults["blueCheck"] == "on" && ViewBag.FormResults["blueCount"] != "0")
-{
-    <img src="~/Content/balloons/blue.png" class="animated slideInUp" />
-}
-@if (ViewBag.FormResults.ContainsKey("yellowCheck") && ViewBag.FormResults["yellowCheck"] == "on" && ViewBag.FormResults["yellowCount"] != "0")
-{
-    <img src="~/Content/balloons/yellow.png" class="animated slideInUp" />
-}
-@if (ViewBag.FormResults.ContainsKey("purpleCheck") && ViewBag.FormResults["purpleCheck"] == "on" && ViewBag.FormResults["purpleCount"] != "0")
-{
-    <img src="~/Content/balloons/purple.png" class="animated slideInUp" />
-}
-@if (ViewBag.FormResults.ContainsKey("greenCheck") && ViewBag.FormResults["greenCheck"] == "on" && ViewBag.FormResults["greenCount"] != "0")
-{
-    <img src="~/Content/balloons/green.png" class="animated slideInUp" />
-}
-@if (ViewBag.FormResults.ContainsKey("orangeCheck") && ViewBag.FormResults["orangeCheck"] == "on" && ViewBag.FormResults["orangeCount"] != "0")
-{
-    <img src="~/Content/balloons/orange.png" class="animated slideInUp" />
+    if (ViewBag.FormResults.ContainsKey(color + "Check") && ViewBag.FormResults[color + "Check"] == "on" && ViewBag.FormResults[color + "Count"] != "0")
+    {
+        <img src=@("../Content/balloons/" + color + ".png") class="animated slideInUp" />
+    }
 }

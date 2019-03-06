@@ -15,81 +15,27 @@
 </div>
 
 <form action="@Url.Action("ViewCart", "Home")" method="post">
-    <div class="input-group form-check mb-3">
-        <div class="input-group-prepend">
-            <div class="input-group-text">
-                <input type="checkbox" name="redCheck" id="redCheck" data-toggle="redBalloon" />
+    @foreach(string color in ViewBag.Colors)
+    {
+        <div class="input-group form-check mb-3">
+            <div class="input-group-prepend">
+                <div class="input-group-text">
+                    <input type="checkbox" name=@(color + "Check") id=@(color + "Check") data-toggle=@(color + "Balloon") />
+                </div>
+            </div>
+            <input type="number" class="form-control" value="0" min="0" name=@(color + "Count")>
+            <div class="input-group-append">
+                <div class="input-group-text">@color</div>
             </div>
         </div>
-        <input type="number" class="form-control" value="0" min="0" name="redCount">
-        <div class="input-group-append">
-            <div class="input-group-text">Red</div>
-        </div>
-    </div>
-    <div class="input-group form-check mb-3">
-        <div class="input-group-prepend">
-            <div class="input-group-text">
-                <input type="checkbox" name="blueCheck" id="blueCheck" data-toggle="blueBalloon" />
-            </div>
-        </div>
-        <input type="number" class="form-control" value="0" min="0" name="blueCount">
-        <div class="input-group-append">
-            <div class="input-group-text">Blue</div>
-        </div>
-    </div>
-    <div class="input-group form-check mb-3">
-        <div class="input-group-prepend">
-            <div class="input-group-text">
-                <input type="checkbox" name="yellowCheck" id="yellowCheck" data-toggle="yellowBalloon" />
-            </div>
-        </div>
-        <input type="number" class="form-control" value="0" min="0" name="yellowCount" />
-        <div class="input-group-append">
-            <div class="input-group-text">Yellow</div>
-        </div>
-    </div>
-    <div class="input-group form-check mb-3">
-        <div class="input-group-prepend">
-            <div class="input-group-text">
-                <input type="checkbox" name="purpleCheck" id="purpleCheck" data-toggle="purpleBalloon" />
-            </div>
-        </div>
-        <input type="number" class="form-control" value="0" min="0" name="purpleCount" />
-        <div class="input-group-append">
-            <div class="input-group-text">Purple</div>
-        </div>
-    </div>
-    <div class="input-group form-check mb-3">
-        <div class="input-group-prepend">
-            <div class="input-group-text">
-                <input type="checkbox" name="greenCheck" id="greenCheck" data-toggle="greenBalloon" />
-            </div>
-        </div>
-        <input type="number" class="form-control" value="0" min="0" name="greenCount" />
-        <div class="input-group-append">
-            <div class="input-group-text">Green</div>
-        </div>
-    </div>
-    <div class="input-group form-check mb-3">
-        <div class="input-group-prepend">
-            <div class="input-group-text">
-                <input type="checkbox" name="orangeCheck" id="orangeCheck" data-toggle="orangeBalloon" />
-            </div>
-        </div>
-        <input type="number" class="form-control" value="0" min="0" name="orangeCount" />
-        <div class="input-group-append">
-            <div class="input-group-text">Orange</div>
-        </div>
-    </div>
+    }
     <button type="submit" class="btn btn-primary mb-3"><i class="fa fa-shopping-cart"></i> Add to Cart</button>
 </form>
 
-<img src="~/Content/balloons/red.png" class="balloons" id="redBalloon" data-toggle="redCheck"/>
-<img src="~/Content/balloons/blue.png" class="balloons" id="blueBalloon" data-toggle="blueCheck"/>
-<img src="~/Content/balloons/yellow.png" class="balloons" id="yellowBalloon" data-toggle="yellowCheck"/>
-<img src="~/Content/balloons/purple.png" class="balloons" id="purpleBalloon" data-toggle="purpleCheck"/>
-<img src="~/Content/balloons/green.png" class="balloons" id="greenBalloon" data-toggle="greenCheck"/>
-<img src="~/Content/balloons/orange.png" class="balloons" id="orangeBalloon" data-toggle="orangeCheck"/>
+@foreach(string color in ViewBag.Colors)
+{
+    <img src=@("../Content/balloons/" + color + ".png") class="balloons" id=@(color + "Balloon") data-toggle=@(color + "Check") />
+}
 
 @section scripts
 {
