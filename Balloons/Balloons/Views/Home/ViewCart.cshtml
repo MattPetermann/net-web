@@ -14,12 +14,18 @@
     <tbody>
         @foreach (string color in ViewBag.Colors)
         {
-            if (ViewBag.FormResults.ContainsKey(color + "Check") && ViewBag.FormResults[color + "Check"] == "on" && ViewBag.FormResults[color + "Count"] != "0")
+            if (ViewBag.FormResults.ContainsKey(color + "Check") && 
+                ViewBag.FormResults[color + "Check"] == "on" && 
+                ViewBag.FormResults[color + "Count"] != "0")
             {
                 <tr>
                     <td>@(color.Substring(0, 1).ToUpper() + color.Substring(1)) Balloons</td>
-                    <td>@(String.Format("{0:#,###}", Convert.ToInt32(ViewBag.FormResults[color + "Count"])))</td>
-                    <td>$@(String.Format("{0:#,##0.00}", Convert.ToInt32(ViewBag.FormResults[color + "Count"]) * .99))</td>
+                    <td class="rowCounts" data-value=@(Convert.ToInt32(ViewBag.FormResults[color + "Count"]))>
+						@(String.Format("{0:#,###}", Convert.ToInt32(ViewBag.FormResults[color + "Count"])))
+					</td>
+                    <td class="rowTotals" data-value=@(Convert.ToInt32(ViewBag.FormResults[color + "Count"]) * .99)>
+                        $@(String.Format("{0:#,##0.00}", Convert.ToInt32(ViewBag.FormResults[color + "Count"]) * .99))
+                    </td>
                 </tr>
             }
         }
@@ -34,8 +40,30 @@
 
 @foreach (string color in ViewBag.Colors)
 {
-    if (ViewBag.FormResults.ContainsKey(color + "Check") && ViewBag.FormResults[color + "Check"] == "on" && ViewBag.FormResults[color + "Count"] != "0")
+    if (ViewBag.FormResults.ContainsKey(color + "Check") && 
+        ViewBag.FormResults[color + "Check"] == "on" && 
+        ViewBag.FormResults[color + "Count"] != "0")
     {
         <img src=@("../Content/balloons/" + color + ".png") class="animated slideInUp" />
     }
+}
+
+@section scripts
+{
+		<script>
+			var columnTotal = 0;
+			var columnCount = 0;
+
+			$(function(){
+				$('.rowTotals').each(function() {
+					columnTotal += parseFloat($(this).data('value'));
+				});
+				$('#total').text(columnTotal.toFixed(2));
+
+				$('.rowCounts').each(function() {
+					columnCount += parseInt($(this).data('value'));
+				});
+				$('#count').text(columnCount);
+			});
+		</script>
 }
