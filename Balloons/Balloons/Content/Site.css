@@ -26,3 +26,8 @@
 #pay {
     display: block;
 }
+
+.balloons {
+    display: none;
+}
+

@@ -3,11 +3,22 @@
     ViewBag.SubHeader = "Order balloons below.";
 }
 
+<div class="input-group mb-3">
+    <div class="input-group-prepend">
+        <div class="input-group-text">
+            <input type="checkbox" id="checkAll" />
+        </div>
+    </div>
+    <div class="input-group-append">
+        <div class="input-group-text">Toggle All</div>
+    </div>
+</div>
+
 <form action="@Url.Action("ViewCart", "Home")" method="post">
     <div class="input-group form-check mb-3">
         <div class="input-group-prepend">
             <div class="input-group-text">
-                <input type="checkbox" name="redCheck" />
+                <input type="checkbox" name="redCheck" id="redCheck" data-toggle="redBalloon" />
             </div>
         </div>
         <input type="number" class="form-control" value="0" min="0" name="redCount">
@@ -18,7 +29,7 @@
     <div class="input-group form-check mb-3">
         <div class="input-group-prepend">
             <div class="input-group-text">
-                <input type="checkbox" name="blueCheck" />
+                <input type="checkbox" name="blueCheck" id="blueCheck" data-toggle="blueBalloon" />
             </div>
         </div>
         <input type="number" class="form-control" value="0" min="0" name="blueCount">
@@ -29,7 +40,7 @@
     <div class="input-group form-check mb-3">
         <div class="input-group-prepend">
             <div class="input-group-text">
-                <input type="checkbox" name="yellowCheck" />
+                <input type="checkbox" name="yellowCheck" id="yellowCheck" data-toggle="yellowBalloon" />
             </div>
         </div>
         <input type="number" class="form-control" value="0" min="0" name="yellowCount" />
@@ -40,7 +51,7 @@
     <div class="input-group form-check mb-3">
         <div class="input-group-prepend">
             <div class="input-group-text">
-                <input type="checkbox" name="purpleCheck" />
+                <input type="checkbox" name="purpleCheck" id="purpleCheck" data-toggle="purpleBalloon" />
             </div>
         </div>
         <input type="number" class="form-control" value="0" min="0" name="purpleCount" />
@@ -51,7 +62,7 @@
     <div class="input-group form-check mb-3">
         <div class="input-group-prepend">
             <div class="input-group-text">
-                <input type="checkbox" name="greenCheck" />
+                <input type="checkbox" name="greenCheck" id="greenCheck" data-toggle="greenBalloon" />
             </div>
         </div>
         <input type="number" class="form-control" value="0" min="0" name="greenCount" />
@@ -62,7 +73,7 @@
     <div class="input-group form-check mb-3">
         <div class="input-group-prepend">
             <div class="input-group-text">
-                <input type="checkbox" name="orangeCheck" />
+                <input type="checkbox" name="orangeCheck" id="orangeCheck" data-toggle="orangeBalloon" />
             </div>
         </div>
         <input type="number" class="form-control" value="0" min="0" name="orangeCount" />
@@ -70,6 +81,41 @@
             <div class="input-group-text">Orange</div>
         </div>
     </div>
-    <button type="submit" class="btn btn-primary"><i class="fa fa-shopping-cart"></i> Add to Cart</button>
+    <button type="submit" class="btn btn-primary mb-3"><i class="fa fa-shopping-cart"></i> Add to Cart</button>
 </form>
 
+<img src="~/Content/balloons/red.png" class="balloons" id="redBalloon" data-toggle="redCheck"/>
+<img src="~/Content/balloons/blue.png" class="balloons" id="blueBalloon" data-toggle="blueCheck"/>
+<img src="~/Content/balloons/yellow.png" class="balloons" id="yellowBalloon" data-toggle="yellowCheck"/>
+<img src="~/Content/balloons/purple.png" class="balloons" id="purpleBalloon" data-toggle="purpleCheck"/>
+<img src="~/Content/balloons/green.png" class="balloons" id="greenBalloon" data-toggle="greenCheck"/>
+<img src="~/Content/balloons/orange.png" class="balloons" id="orangeBalloon" data-toggle="orangeCheck"/>
+
+@section scripts
+{
+    <script>
+        $(function () {
+            $('#checkAll').on('change', function () {
+                $('input[type="checkbox"]').prop('checked', $(this).prop('checked'));
+                $('.balloons').css('display', $(this).prop('checked') ? 'inline' : 'none');
+            });
+
+            $('input[type="checkbox"]').on('change', function () {
+                if (!($(this).prop('checked')))
+                    $('#checkAll').prop('checked', false);
+
+                var ball = $('#' + $(this).data('toggle'));
+                if ($(this).prop('checked'))
+                    ball.show();
+                else
+                    ball.hide();
+            });
+
+            $('.balloons').on('click', function () {
+                $('#' + $(this).data('toggle')).prop('checked', false);
+                $('#checkAll').prop('checked', false);
+                $(this).hide();
+            });
+        });
+    </script>
+}
