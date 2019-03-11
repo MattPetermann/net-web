@@ -7,19 +7,20 @@ namespace Northwind.Controllers
     public class HomeController : Controller
     {
         public ActionResult Index()
-        {
-            return View();
+		{
+			ViewBag.Message = "15% Off Today!";
+
+			return View();
         }
+
+		public ActionResult Order()
+		{
+			ViewBag.Message = "Place an Order";
+			return View();
+		}
 
         public ActionResult Products()
         {
-            ViewBag.Products = new List<Product>
-            {
-                new Product(1000, 249.99, "Bike"),
-                new Product(1001, 24.99, "Helmet"),
-                new Product(1002, 11.99, "Knee Pads"),
-            };
-
             return View();
         }
 

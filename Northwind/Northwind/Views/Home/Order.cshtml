@@ -1,0 +1,39 @@
+﻿@using Northwind.Models
+@{
+	ViewBag.Title = "Order";
+}
+
+<table class="table table-bordered table-hover">
+	<thead>
+		<th style="width:70%">Product Name</th>
+		<th style="width:10%" class="right-align">Unit</th>
+		<th style="width:10%" class="right-align">Quantity</th>
+		<th style="width:10%" class="right-align">Total</th>
+	</thead>
+	<tbody>
+		@foreach(Product p in Inventory.GetInventory()) {
+			<tr>
+				<td>@p.Name</td>
+				<td class="right-align">$@p.Price.ToString("#,###.00")</td>
+				<td class="right-align">
+					<input type="number" class="form-control form-control-sm" value=0 min=0 step=1 data-unit=@p.Price data-control="#row_@p.Id" />
+				</td>
+				<th class="right-align" id="row_@p.Id">$$</th>
+			</tr>
+		}
+		<tr>
+			<th class="right-align">Total:</th>
+			<th></th>
+			<th></th>
+			<th class="right-align">$$</th>
+		</tr>
+	</tbody>
+</table>
+
+@section scripts {
+	<script>
+		$(function(){
+			alert("@Inventory.GetInventory()[0].Name");
+		});
+	</script>		
+}

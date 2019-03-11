@@ -1,21 +1,4 @@
-﻿@using Northwind.Models
-@{
+﻿@{
     ViewBag.Title = "Products";
 }
 
-<h2 class="display-1">@ViewBag.Title</h2>
-
-<div class="card-deck">
-    @foreach(Product product in ViewBag.Products)
-    {
-        <div class="card">
-            <img class="card-img-top" src="https://placehold.it/500x500">
-            <div class="card-body">
-                <h4 class="card-title">@product.Name <span class="text-secondary"> $@product.Price</span></h4>
-                <p class="card-text">This is the item description.</p>
-                <button class="btn btn-primary"><span class="fa fa-search-plus"></span> View Item</button>
-                <button class="btn btn-success"><span class="fa fa-shopping-cart"></span> Quick Add</button>
-            </div>
-        </div>
-    }
-</div>
