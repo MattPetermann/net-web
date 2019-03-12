@@ -78,5 +78,19 @@ namespace Northwind.Models
 					"https://images-na.ssl-images-amazon.com/images/I/711cp18DHpL._SL1500_.jpg")
 			};
 		}
+
+		public static string GetIdList()
+		{
+			string json = "{\"arr\":[";
+
+			for(int i=0; i<GetInventory().Count; i++)
+			{
+				json += "{\"id\":" + GetInventory()[i].Id + ", \"price\":" + GetInventory()[i].Price + "}";
+				if(i != GetInventory().Count - 1)
+					json += ",";
+			}
+
+			return json + "]}";
+		}
 	}
 }
