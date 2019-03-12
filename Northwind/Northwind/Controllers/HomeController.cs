@@ -1,6 +1,4 @@
-﻿using Northwind.Models;
-using System.Collections.Generic;
-using System.Web.Mvc;
+﻿using System.Web.Mvc;
 
 namespace Northwind.Controllers
 {
@@ -16,12 +14,15 @@ namespace Northwind.Controllers
 		public ActionResult Order()
 		{
 			ViewBag.Message = "Place an Order";
+
 			return View();
 		}
 
         public ActionResult Products()
-        {
-            return View();
+		{
+			ViewBag.Message = "Your product page.";
+
+			return View();
         }
 
         public ActionResult Account()

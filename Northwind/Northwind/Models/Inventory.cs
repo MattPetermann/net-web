@@ -4,6 +4,10 @@ namespace Northwind.Models
 {
 	public class Inventory
 	{
+		/// <summary>
+		/// Current inventory for Northwind
+		/// </summary>
+		/// <returns>List of Products representing inventory</returns>
 		public static List<Product> GetInventory()
 		{
 			return new List<Product>
@@ -79,6 +83,10 @@ namespace Northwind.Models
 			};
 		}
 
+		/// <summary>
+		/// Parse the inventory into a json string
+		/// </summary>
+		/// <returns>A string in JSON format</returns>
 		public static string GetIdList()
 		{
 			string json = "{\"arr\":[";
