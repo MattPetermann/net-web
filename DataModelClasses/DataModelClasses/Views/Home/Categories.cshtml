@@ -1,0 +1,15 @@
+﻿@using DataModelClasses.Models
+@model IEnumerable<Category>
+@{
+	ViewBag.Title = "Categories";
+}
+
+<h2>Categories</h2>
+<p>There are @Model.Count() categories</p>
+<hr />
+<ul>
+	@foreach (Category c in Model)
+	{
+		<li>@c.Name</li>
+	}
+</ul>

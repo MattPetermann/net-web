@@ -11,7 +11,17 @@ namespace DataModelClasses.Controllers
 	{
 		public ActionResult Products()
 		{
-			return View(ProductContext.GetProducts());
+			return View((new ProductContext()).GetProducts());
+		}
+
+		public ActionResult Product(int id)
+		{
+			return View((new ProductContext()).Find(id));
+		}
+
+		public ActionResult Categories()
+		{
+			return View((new CategoryContext()).GetCategories());
 		}
 
 		public ActionResult Index()
