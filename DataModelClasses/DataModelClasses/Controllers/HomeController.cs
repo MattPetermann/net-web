@@ -4,6 +4,8 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using DataModelClasses.Models;
+using System.Data.Entity;
+using DataModelClasses.DataLayer;
 
 namespace DataModelClasses.Controllers
 {
@@ -31,6 +33,14 @@ namespace DataModelClasses.Controllers
 		public ActionResult Index()
 		{
 			return View();
+		}
+
+		public ActionResult Category()
+		{
+			using (var db = new NorthwindEntities())
+			{
+
+			}
 		}
 	}
 }
