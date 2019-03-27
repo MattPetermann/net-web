@@ -10,6 +10,6 @@
 <ul>
 	@foreach (Category c in Model)
 	{
-		<li>@c.Name</li>
+		<li>@Html.ActionLink(c.Name, "Categories/" + c.Id + "/Products", "Home")</li>
 	}
 </ul>

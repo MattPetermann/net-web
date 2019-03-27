@@ -13,9 +13,11 @@ namespace DataModelClasses.Models
 		{
 			_products = new List<Product>()
 			{
-				new Product { Id=100, Name="CD", Price=10.00m},
-				new Product { Id=101, Name="Printer", Price=200.00m},
-				new Product { Id=102, Name="Stuffed Animal", Price=5.00m}
+				new Product { Id=100, Name="CD", Price=10.00m, CategoryId=1},
+				new Product { Id=101, Name="Printer", Price=200.00m, CategoryId=2},
+				new Product { Id=102, Name="Stuffed Animal", Price=5.00m, CategoryId=3},
+				new Product { Id=103, Name="Wooden Horse", Price=85.00m, CategoryId=3},
+				new Product { Id=104, Name="Stereo", Price=5.00m, CategoryId=2}
 			};
 		}
 

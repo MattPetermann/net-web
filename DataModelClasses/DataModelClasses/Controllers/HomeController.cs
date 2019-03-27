@@ -9,9 +9,13 @@ namespace DataModelClasses.Controllers
 {
 	public class HomeController : Controller
 	{
-		public ActionResult Products()
+		public ActionResult Products(int? id)
 		{
-			return View((new ProductContext()).GetProducts());
+			var products = (new ProductContext()).GetProducts();
+			if (id == null)
+				return View(products);
+			else
+				return View(products.Where(c => c.CategoryId == id));
 		}
 
 		public ActionResult Product(int id)
