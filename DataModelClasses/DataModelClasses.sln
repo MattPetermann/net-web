@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28010.2016
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataModelClasses", "DataModelClasses\DataModelClasses.csproj", "{61C8F352-50D2-461D-8751-ED863ECFBF8D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataModelClasses.DataLayer", "DataModelClasses.DataLayer\DataModelClasses.DataLayer.csproj", "{FEDAEAFC-F620-4603-BD6C-422D46DD4C98}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{61C8F352-50D2-461D-8751-ED863ECFBF8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{61C8F352-50D2-461D-8751-ED863ECFBF8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{61C8F352-50D2-461D-8751-ED863ECFBF8D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FEDAEAFC-F620-4603-BD6C-422D46DD4C98}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FEDAEAFC-F620-4603-BD6C-422D46DD4C98}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FEDAEAFC-F620-4603-BD6C-422D46DD4C98}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FEDAEAFC-F620-4603-BD6C-422D46DD4C98}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
