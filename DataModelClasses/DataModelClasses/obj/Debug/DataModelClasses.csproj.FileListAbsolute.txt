@@ -180,3 +180,10 @@ C:\Users\mattp\Desktop\net-web\DataModelClasses\DataModelClasses\obj\Debug\DataM
 C:\Users\mattp\Desktop\net-web\DataModelClasses\DataModelClasses\obj\Debug\DataModelClasses.csproj.CopyComplete
 C:\Users\mattp\Desktop\net-web\DataModelClasses\DataModelClasses\obj\Debug\DataModelClasses.dll
 C:\Users\mattp\Desktop\net-web\DataModelClasses\DataModelClasses\obj\Debug\DataModelClasses.pdb
+C:\Users\mattp\Desktop\net-web\DataModelClasses\DataModelClasses\bin\DataModelClasses.DataLayer.dll
+C:\Users\mattp\Desktop\net-web\DataModelClasses\DataModelClasses\bin\EntityFramework.dll
+C:\Users\mattp\Desktop\net-web\DataModelClasses\DataModelClasses\bin\EntityFramework.SqlServer.dll
+C:\Users\mattp\Desktop\net-web\DataModelClasses\DataModelClasses\bin\DataModelClasses.DataLayer.pdb
+C:\Users\mattp\Desktop\net-web\DataModelClasses\DataModelClasses\bin\DataModelClasses.DataLayer.dll.config
+C:\Users\mattp\Desktop\net-web\DataModelClasses\DataModelClasses\bin\EntityFramework.xml
+C:\Users\mattp\Desktop\net-web\DataModelClasses\DataModelClasses\bin\EntityFramework.SqlServer.xml

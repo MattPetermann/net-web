@@ -39,7 +39,7 @@ namespace DataModelClasses.Controllers
 		{
 			using (var db = new NorthwindEntities())
 			{
-
+				return View(db.Categories.OrderByDescending(c => c.CategoryName).ToList());
 			}
 		}
 	}
