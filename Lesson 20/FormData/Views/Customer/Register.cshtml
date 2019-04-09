@@ -7,11 +7,33 @@
 <h2>Register</h2>
 
 <div class="well">
-	@using(Html.BeginForm())
+	@using (Html.BeginForm())
 	{
+		@Html.AntiForgeryToken()
+		<div class="editor-label">
+			@Html.LabelFor(Model => Model.CompanyName)
+		</div>
+		<div class="editor-field">
+			@Html.TextBoxFor(Model => Model.CompanyName)
+		</div>
 
+		<div class="editor-label">
+			@Html.LabelFor(Model => Model.Email)
+		</div>
+		<div class="editor-field">
+			@Html.TextBoxFor(Model => Model.Email)
+		</div>
+
+		<div class="editor-label">
+			@Html.LabelFor(Model => Model.Password)
+		</div>
+		<div class="editor-field">
+			@Html.TextBoxFor(Model => Model.Password)
+		</div>
+
+		<input type="submit" />
 	}
-</div> 
+</div>
 <div class="font-md">
 	<a href="~/Home/Index">
 		<i class="fa fa-home"></i> Home
